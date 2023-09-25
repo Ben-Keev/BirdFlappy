@@ -6,11 +6,14 @@ public class Player : MonoBehaviour
 {   
     public float velocity = 2.4f;
     private Rigidbody2D rigidbody;
+
+    public Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
